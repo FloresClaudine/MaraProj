@@ -1,0 +1,357 @@
+body {
+    background: url(mayor.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100vw;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+
+body::after {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; 
+    filter: brightness(1.1) blur(20px);
+}
+
+.rectangle {
+    width: 240px; 
+    height: 60px; 
+    background-color: #333; /* Black background with 30% opacity */
+    position: absolute; 
+    top: -60px; 
+    left: 220px; 
+    border-radius: 8px;
+    z-index: 3; 
+    margin-left: 1400px; 
+    margin-top: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+}
+
+
+ .rectangle i {
+ font-size: 30px; 
+ color: black; 
+ transition: color 0.3s; 
+ font-weight: bold;
+ position: fixed;
+ margin-left: 140px;
+
+
+
+}
+
+ .rectangle .user i{
+
+font-size: 30px; 
+ color: black; 
+ transition: color 0.3s; 
+ font-weight: bold;
+ position: fixed;
+ margin-right: 140px;
+}
+
+
+.menu {
+    width: 400px; 
+    height: 500px; 
+    background-color: #333;
+    position: absolute; 
+    top: 50px; 
+    right: 70px; 
+    border-radius: 8px;
+    z-index: 3; 
+    margin-left: 1400px; 
+    margin-top: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    display: none; /* Initially hidden */
+
+}
+a {
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: 'Assistant';
+    font-weight: bold;
+    position: relative;
+    top: 10px; /* Negative value moves it upward */
+    color: black;
+    text-decoration: none;
+}
+
+
+.bg {
+    background-color: white;
+    height: 65px;
+    width: 370px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 15px; 
+}
+
+.bg img {
+    height: 40px; 
+    width: 40px; 
+    object-fit: contain; 
+    margin-right: -25px; 
+}
+
+.bg2 {
+    background-color: #d9d9d9;
+    height: 50px;
+    width: 300px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 2px; 
+    text-align: left;
+}
+
+
+.name {
+    text-align: right; /* Center the text */
+    padding: 20px; /* Space around the content */
+    margin-top: 120px;
+}
+
+.name h1 {
+    font-family: 'Times New Roman', Times, serif /* Elegant font style */;
+    font-size: 70px; /* Large font size for prominence */
+    color: #ffff; /* Dark color for contrast */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Make the text uppercase */
+    margin-right: 120px;
+    margin-top: 50px;
+    letter-spacing: 6px;
+}
+
+
+
+.title h4 {
+    font-size: 40px; /* Adjusts font size for a prominent look */
+    color: #ffff; /* Darker color for readability */
+    margin: 0; /* Removes default margin around heading */
+    font-weight: bold; /* Emphasizes the heading */
+    font-family: League Spartan;
+    margin-top: -20px;
+    margin-left: 1200px;
+}
+
+.tagline{
+    color: #ffff;
+}
+
+.tagline h5{
+    margin-left: 935px;
+    font-size: 29px;
+    font-family: Assistant;
+    font-weight: normal;
+    margin-bottom: 40px;
+    
+    
+}
+
+.button-read {
+    margin-left: 940px;
+    
+}
+
+ .button-read button {
+    width: 150px; 
+    height: 50px; 
+    background-color: #333;
+    opacity: 80%; 
+    border-radius: 50px; 
+    margin: 0 auto; /* Center horizontally */
+    margin-right: 150px;
+    margin-top: 2px; /* Adjust this value as needed */
+    cursor: pointer;
+    border: none;
+    
+
+}
+
+.logo {
+    display: flex;                
+    justify-content: left;      
+    padding: 20px; 
+}
+
+.logo img {
+    max-width: 165px;   
+    height: auto;      
+    margin-left: 75px; 
+}
+
+
+
+
+#contact-toggle  h4 {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline #ffff;
+    margin-top: -40px ;
+    margin-right: 790px;
+}
+
+
+.contact-details-square {
+    background-color: #333;  /* Light gray background */
+    border: 1px solid #ccc;     /* Light border for the square */
+    padding: 20px;               /* Spacing inside the square */
+    margin-top: 10px;            /* Space above the contact box */
+    border-radius: 8px;          /* Rounded corners */
+    width: 300px;                 /* Full width of the container */
+    box-sizing: border-box;      /* Ensure padding is included in the width */
+    margin-left: 950px;
+}
+
+
+.details p {
+    font-size: 16px;                  /* Appropriate text size for readability */
+    color: #ffff;                      /* Dark color for the text */
+    margin: 5px 0;                    /* Spacing between the paragraphs */
+}
+
+.details p:first-child {
+    font-weight: bold;                /* Make the first line (Email) bold for emphasis */
+}
+
+.details p:nth-child(2) {
+    color: #ffff;                   /* Green color for the phone number */
+}
+
+.details p:nth-child(3) {
+    font-style: italic;               /* Italicize the office location */
+    color: #ffff;                      /* Slightly lighter color for the office line */
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin-top: 300px;
+}
+
+.official-title {
+    padding: 20px; /* Adds space around the title */
+    text-align: center; /* Centers the text */
+    color: #ffffff; /* White text for contrast */
+    margin-top: 260px;
+}
+
+.official-title h1 {
+    font-family: Arial, sans-serif; /* Simple, clean font */
+    font-size: 2.5em; /* Large font size for emphasis */
+    font-weight: bold; /* Makes the title stand out */
+    margin: 0; /* Removes default margin */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    margin-top: 450px;
+}
+
+/* Container styling */
+#official-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffff;
+}
+
+/* Individual profile card styling */
+.officials-profile {
+    background-color: #cddef0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+.officials-profile:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.item-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Text styles */
+.official-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.official-title,
+.official-title2,
+.official-location,
+.official-number {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+    
+}
+
+/* Optional customization */
+.official-title {
+    color: #003366;
+    margin-top: 300px;
+    font-family: Assistant;
+    margin-top: -20px;
+}
+
+.official-title2 {
+    font-weight: bold;
+    color: #333;
+    margin-top: -20px;
+}
+
+.official-location {
+    color: #333;
+}
+
+.official-number {
+    color: #333;
+    font-weight: bold;
+}

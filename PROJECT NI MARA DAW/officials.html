@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="officials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://boxicons.com/">
+    <link rel="icon" href="horizonlogo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Almarai:wght@800&family=Alumni+Sans:wght@700;800&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Asap+Condensed:ital,wght@0,500;1,200&family=Assistant:wght@200..800&family=Be+Vietnam+Pro:wght@900&family=Bebas+Neue&family=Big+Shoulders+Inline+Display:wght@300&family=Heebo:wght@900&family=Noto+Serif:wght@500&family=Petit+Formal+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,600;1,600&family=Roboto+Condensed:wght@500;600&family=Saira+Extra+Condensed:wght@100;800&family=Yesteryear&display=swap" rel="stylesheet">
+    <title>Quezon Horizon | Officials</title>
+</head>
+
+<body>
+    <section class="rectangle">
+        <i class="fa-solid fa-bars" id="menuToggle" style="cursor: pointer; color: white;"></i>
+    </section>
+
+    <section class="name">
+        <h1>Hon. Joy Belmonte </h1>
+    </section>
+
+    <section class="title">
+        <h4>Quezon City Mayor</h4>
+    </section>
+
+    <div class="tagline">
+        <h5>"Ang lahat ng ating pagsisikap, mula sa unang araw natin bilang Mayor, ay ginagabayan ng isang prinsipyo; Good Governance o mabuting pamamahala. Naipakita natin sa lahat na kapag maayos ang ating pamamalakad, walang imposible. Sa totoo lang, kayo ang sikreto kung bakit number 1 na lungsod <br>
+            ang Quezon City."</h5>
+        <div class="button-read">
+            <button id="contactToggle">
+                <h4 style="font-size: 20px; color: white; text-align: center; text-decoration: underline #ffff; margin-right: 500px; margin-top: 12px; margin-left: 25px; text-align: center;">Contacts</h4>
+            </button>
+        </div>
+
+        <div class="contact-details-square">
+            <div class="details" id="contactDetails">
+                <p>Email: mayor@quezoncity.gov.ph</p>
+                <p>Phone: (02) 123-4567</p>
+                <p>Office: Quezon City Hall, Diliman, QC</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="menu" id="menu">
+        <div class="bg">
+            <div class="bg2">
+                <a href="QuezonCityNews.html">Home</a>
+            </div>
+        </div>
+
+        <div class="bg">
+            <div class="bg2">
+                <a href="news.html">News</a>
+            </div>
+        </div>
+
+        <div class="bg">
+            <div class="bg2">
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+
+        <div class="bg">
+            <div class="bg2">
+                <a href="programs.html">Programs</a>
+            </div>
+        </div>
+
+        <div class="bg">
+            <div class="bg2">
+                <a href="officials.html">Officials</a>
+            </div>
+        </div>
+    </section>
+
+    <header class="official-title">
+        <h1>Quezon City Public Servants </h1>
+    </header>
+
+    <div id="official-catalog"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const menu = document.getElementById('menu');
+            const contactToggle = document.getElementById('contactToggle');
+            const contactDetails = document.getElementById('contactDetails');
+            const contactSquare = document.querySelector('.contact-details-square');
+
+            menuToggle.addEventListener('click', function() {
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                }
+            });
+
+            contactToggle.addEventListener('click', function() {
+                if (contactDetails.style.display === 'block') {
+                    contactDetails.style.display = 'none';
+                    contactSquare.style.display = 'none';
+                } else {
+                    contactDetails.style.display = 'block';
+                    contactSquare.style.display = 'block';
+                }
+            });
+
+            // Fetch clothing data and display items
+            fetch('officials.json') 
+                .then(response => response.json())
+                .then(officialsInventory => {
+                    let officialsDisplay = "";
+                    for (const officials of officialsInventory) {
+                        officialsDisplay += `
+                            <div class="officials-profile">
+                                <img src="${officials.picture}" alt="${officials.name}" class="item-image">
+                                <h3 class="official-name">${officials.name}</h3>
+                                <p class="official-title">${officials.title}</p>
+                                <p class="official-location">${officials.location}</p>
+                                <p class="official-number">${officials.number}</p>
+
+
+                            </div>
+                        `;
+                    }
+                    document.querySelector("#official-catalog").innerHTML = officialsDisplay;
+                });
+        });
+    </script>
+</body>
+</html>

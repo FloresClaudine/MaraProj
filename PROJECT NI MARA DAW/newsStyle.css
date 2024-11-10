@@ -1,0 +1,460 @@
+
+/*homepage css */
+body {
+    background: url(bg-homescreen.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100vw;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+
+body::after {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; 
+    filter: brightness(1.1) blur(20px);
+}
+
+.logo {
+    display: flex;                
+    justify-content: left;      
+    padding: 20px; 
+}
+
+.logo img {
+    max-width: 165px;   
+    height: auto;      
+    margin-left: 75px; 
+}
+
+
+.title-horizon {
+    text-align: left; 
+    margin-top: 20px; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.title-horizon h1 {
+    font-size: 140px; 
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    letter-spacing: 2px; 
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.9); 
+    font-weight: normal; 
+    padding-top: -220px;
+    padding-left: 120px;
+}
+
+.latest-updates h2 {
+    color: white; 
+    font-size: 55px; 
+    text-align: left; 
+    font-family: 'Arvo';
+    margin-left: 10px; 
+    margin: -120px;
+    padding-left: 455px;
+    letter-spacing: 2px; 
+    font-weight: normal;
+}
+
+p {
+    font-family: Assistant; 
+    font-size: 30px; 
+    color: #ffffff; 
+    line-height: 1.6; 
+    margin: 20px 120px;
+    padding: 10px; 
+    text-align: left; 
+    font-weight: normal;
+    margin: 150px -220px; 
+    padding-left: 400px; 
+}
+
+.oval {
+    width: 200px; 
+    height: 50px; 
+    background-color: #cddef0; 
+    border-radius: 50px; 
+    margin: -150px auto; 
+    margin-left: 150px;
+    margin-top: -100px;
+}
+
+.rectangle {
+    width: 240px; 
+    height: 60px; 
+    background-color: rgba(0, 0, 0, 0.3); /* Black background with 30% opacity */
+    position: absolute; 
+    top: -60px; 
+    left: 220px; 
+    border-radius: 8px;
+    z-index: 3; 
+    margin-left: 1400px; 
+    margin-top: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+}
+
+
+ .rectangle i {
+ font-size: 30px; 
+ color: black; 
+ transition: color 0.3s; 
+ font-weight: bold;
+ position: fixed;
+ margin-left: 140px;
+
+
+
+}
+
+ .rectangle .user i{
+
+font-size: 30px; 
+ color: black; 
+ transition: color 0.3s; 
+ font-weight: bold;
+ position: fixed;
+ margin-right: 140px;
+}
+.menu {
+    width: 400px; 
+    height: 500px; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    position: absolute; 
+    top: 50px; 
+    right: 70px; 
+    border-radius: 8px;
+    z-index: 3; 
+    margin-left: 1400px; 
+    margin-top: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    display: none; /* Initially hidden */
+
+}
+
+a{
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: 'Assistant';
+    font-weight: bold;
+    justify-content: left;
+    top: 90px;
+
+}
+
+.bg {
+    background-color: white;
+    height: 65px;
+    width: 370px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 15px; 
+}
+
+.bg img {
+    height: 40px; 
+    width: 40px; 
+    object-fit: contain; 
+    margin-right: -25px; 
+}
+
+.bg2 {
+    background-color: #d9d9d9;
+    height: 50px;
+    width: 300px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 2px; 
+    text-align: left;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 280px;
+    margin-left: 1820px;
+}
+
+.circle h5 {
+    margin: 0;
+    font-size: 34px; 
+    color: #333; 
+    font-family: Assistant;
+}
+
+
+
+.contacts {
+    width: 2020px;
+    height: 600px;
+    background-color: #18437a;
+    margin: 20px auto;
+    margin-top: 90px;
+    position: relative; 
+}
+
+.contacts h1 {
+    font-size: 70px; 
+    color: #ffff; 
+    font-family: League Spartan;
+    text-align: center;
+    position: absolute; 
+    top: -10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-top: -30px;
+}
+
+.caption-below {
+    padding: 20px; 
+    text-align: center; 
+}
+
+.caption-below h3 {
+    font-size: 20px; 
+    color: #ffff; 
+    font-weight: normal; 
+    line-height: 1.5; 
+    margin: 0; 
+    margin-top: 90px; 
+    font-family: Assistant;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+
+.contact-icon {
+    text-align: center;                 
+    width: 70px;                         
+    height: 70px;                        
+    border-radius: 8px;                  
+    color: black;                        
+    font-size: 36px;                    
+    line-height: 80px;                   
+    margin: 20px 20px; /* Adjusted margins for better spacing */
+    margin-right: 20px;  
+    margin-bottom: 20px;  /* Reduced bottom margin */
+    transition: transform 0.3s ease;    
+    margin-left: 100px;
+    display: block; 
+    padding-top: 20px; /* Adjust padding as necessary */
+}
+
+
+.contact-icon i {
+    background-color: #cddef0;
+    padding: 15px; 
+    border-radius: 8px; 
+    font-size: 36px; 
+    display: inline-block; 
+    width: 70px; 
+    height: 70px; 
+    line-height: 40px; 
+}
+
+    
+.hotline-captions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.phone-captions {
+    display: inline-block;
+    margin: 10px 0; 
+}
+
+.phone-captions h4 {
+    font-size: 27px;
+    color: #ffff;
+    font-weight: bold;
+    margin: 5px 0; 
+    padding: 20px;
+    border-radius: 8px;
+    position: relative; 
+    top: -440px; 
+    margin-right: 1145px;
+    font-family: League Spartan;
+}
+
+.phone-captions h5 {
+    font-size: 22px; 
+    color: #ffff; 
+    font-weight: normal; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    position: relative; 
+    top: -520px; 
+    margin-left: -990px;
+    margin-top: 60px;
+    font-family: Assistant;
+
+}
+
+.health-captions h4 {
+    font-size: 27px;
+    color: #ffff;
+    font-weight: bold;
+    margin: 5px 0; 
+    padding: 20px;
+    border-radius: 8px;
+    position: relative; 
+    top: -550px; 
+    margin-right: 1130px;
+    font-family: League Spartan;
+}
+
+.health-captions h5 {
+    font-size: 22px; 
+    color: #ffff; 
+    font-weight: normal; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    position: relative; 
+    top: -520px; 
+    margin-left: -1100px;
+    margin-top: -60px;
+    font-family: Assistant;
+
+}
+
+.fire-captions h4 {
+    font-size: 27px;
+    color: #ffff;
+    font-weight: bold;
+    margin: 5px 0; 
+    padding: 20px;
+    border-radius: 8px;
+    position: relative; 
+    top: -520px; 
+    margin-left: -1220px;
+    font-family: League Spartan;
+}
+
+.fire-captions h5 {
+    font-size: 22px; 
+    color: #ffff; 
+    font-weight: normal; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    position: relative; 
+    top: -520px; 
+    margin-left: -1090px;
+    margin-top: -30px;
+    font-family: Assistant;
+
+}
+
+footer {
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px;
+    font-size: 14px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    margin-top: 100px; 
+    font-family: 'League Spartan', sans-serif; 
+}
+
+
+/* mayor */
+
+.mayor-pic {
+    position: relative; /* Enables positioning */
+    top: -400px; /* Move the div upward by 20 pixels */
+    
+}
+
+.mayor-pic img{
+    height: 1200px;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .title-horizon h1 {
+        font-size: 100px; 
+        padding-left: 80px; 
+    }
+
+    .latest-updates h2 {
+        font-size: 45px; 
+        padding-left: 250px; 
+    }
+
+    p {
+        font-size: 24px; 
+        margin: 100px 40px; 
+        padding-left: 20px; 
+    }
+
+    .oval {
+        width: 150px; 
+        height: 40px; 
+        margin: -100px auto; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title-horizon h1 {
+        font-size: 80px; 
+        padding-left: 50px; 
+    }
+
+    .latest-updates h2 {
+        font-size: 35px; 
+        padding-left: 50px; 
+    }
+
+    p {
+        font-size: 20px; 
+        margin: 80px 20px; 
+        padding-left: 10px; 
+    }
+
+    .oval {
+        width: 120px; 
+        height: 30px; 
+    }
+}
